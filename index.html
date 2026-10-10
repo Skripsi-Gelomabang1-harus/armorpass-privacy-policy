@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armor Pass Privacy Policy</title>
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.7;
+    color: #333;
+}
+h1, h2 {
+    color: #0F62FE;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+h2 {
+    font-size: 1.35rem;
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+p, li {
+    font-size: 1rem;
+    color: #444;
+}
+ul {
+    padding-left: 24px;
+}
+li {
+    margin-bottom: 6px;
+}
+.highlight {
+    background-color: #f0fdf4;
+    border-left: 4px solid #16a34a;
+    padding: 14px 18px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.highlight p {
+    margin: 0;
+    color: #166534;
+    font-weight: 500;
+}
+hr {
+    margin: 50px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= ENGLISH VERSION ================= -->
+<h1>Privacy Policy</h1>
+
+<p><strong>Effective Date:</strong> October 10, 2026</p>
+
+<p>Armor Pass ("we", "our", or "the application", package name: <code>com.sumpena.armorpass</code>) is committed to protecting your privacy. This Privacy Policy explains how Armor Pass handles your information.</p>
+
+<div class="highlight">
+<p>🔒 <strong>Zero-Knowledge Architecture:</strong> Armor Pass operates on a strict zero-knowledge model. All your passwords, accounts, and credentials are encrypted locally on your device. We do not have access to your master password or your decrypted vault data.</p>
+</div>
+
+<h2>Information We Process</h2>
+
+<p>Armor Pass processes the following types of information strictly to provide offline password management and optional encrypted backup services:</p>
+
+<ul>
+<li><strong>Vault Credentials:</strong> Usernames, passwords, notes, PINs, and custom fields that you enter into the application. All credentials are encrypted locally using AES-256-GCM authenticated encryption with keys derived via Argon2id.</li>
+<li><strong>Google Account Information:</strong> If you choose to enable Google Drive Sync, the app accesses your basic Google account identity (email address and name) solely to authenticate and connect to your Google Drive account.</li>
+<li><strong>Biometric Data:</strong> If you enable biometric authentication (fingerprint or face unlock), verification is handled entirely by the Android operating system (Android BiometricPrompt & KeyStore). Armor Pass never collects, stores, or accesses your biometric data.</li>
+</ul>
+
+<h2>How We Use Your Information</h2>
+
+<ul>
+<li>Encrypt and decrypt your vault data locally on your device.</li>
+<li>Fill credentials securely into apps and browsers via the Android Autofill service when requested by you.</li>
+<li>Backup and synchronize encrypted vault files to your personal Google Drive storage (only if enabled).</li>
+</ul>
+
+<h2>Local Data Storage</h2>
+
+<p>Your vault data and master password are never stored in plaintext and are never sent to our servers. All sensitive data remains securely stored on your local device storage.</p>
+
+<h2>Google Drive Integration & Google API Limited Use Disclosure</h2>
+
+<p>Armor Pass includes an optional feature allowing you to backup and sync your encrypted vault file with your personal Google Drive account.</p>
+
+<ul>
+<li><strong>Restricted Scope:</strong> Armor Pass only requests access to the Google Drive Application Data folder (<code>https://www.googleapis.com/auth/drive.appdata</code>) and files created by the app (<code>https://www.googleapis.com/auth/drive.file</code>).</li>
+<li><strong>No Access to Personal Files:</strong> Armor Pass cannot read, view, modify, or delete any other files, photos, or documents in your Google Drive.</li>
+<li><strong>Direct Communication:</strong> Communication occurs directly between your device and Google's official Drive API endpoints. We do not operate intermediary proxy servers and never access your Google tokens or data.</li>
+<li><strong>Limited Use Compliance:</strong> Armor Pass's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. Your Google user data is never transferred to third parties, never used for advertising, and never used to train machine learning models.</li>
+</ul>
+
+<h2>Analytics</h2>
+
+<p>Armor Pass does not use analytics services or tracking libraries.</p>
+
+<h2>Advertising</h2>
+
+<p>Armor Pass does not display advertisements.</p>
+
+<h2>Data Sharing</h2>
+
+<p>We do not sell, rent, monetize, or share your personal information or vault data with third parties.</p>
+
+<h2>Security</h2>
+
+<p>We implement industry-standard cryptographic practices to safeguard your data, including:</p>
+<ul>
+<li>Zero-Knowledge client-side encryption (AES-256-GCM).</li>
+<li>High-memory key derivation (Argon2id KDF).</li>
+<li>Screen capture protection (Android <code>FLAG_SECURE</code>) to prevent unauthorized screenshots and recordings.</li>
+<li>Secure hardware-backed biometric authentication.</li>
+</ul>
+
+<h2>Children's Privacy</h2>
+
+<p>Armor Pass is not intended for children under 13 years of age. We do not knowingly collect personal information from children.</p>
+
+<h2>Data Deletion and User Rights</h2>
+
+<p>You have full control over your data at all times:</p>
+<ul>
+<li><strong>Local Data:</strong> You can delete your vault data at any time from within the application or by clearing the app data in Android Settings.</li>
+<li><strong>Google Drive Backup:</strong> You can delete your hidden backup file at any time from Google Drive web settings (<em>Settings &gt; Manage Apps &gt; Armor Pass &gt; Delete hidden app data</em>) or by disconnecting your Google account in Armor Pass settings.</li>
+</ul>
+
+<h2>Changes to This Privacy Policy</h2>
+
+<p>We may update this Privacy Policy from time to time. Any changes will be reflected with a revised effective date at the top of this page.</p>
+
+<h2>Contact</h2>
+
+<p>Developer: <strong>Iwan Sumpena</strong><br>
+Application: <strong>Armor Pass</strong> (<code>com.sumpena.armorpass</code>)<br>
+Email: <strong><a href="mailto:iwansumpena@gmail.com">iwansumpena@gmail.com</a></strong></p>
+
+<hr>
+
+<!-- ================= INDONESIAN VERSION ================= -->
+<h1>Kebijakan Privasi</h1>
+
+<p><strong>Tanggal Berlaku:</strong> 10 Oktober 2026</p>
+
+<p>Armor Pass ("kami", atau "aplikasi", package name: <code>com.sumpena.armorpass</code>) berkomitmen penuh untuk melindungi privasi pengguna. Kebijakan Privasi ini menjelaskan bagaimana aplikasi Armor Pass mengelola informasi Anda.</p>
+
+<div class="highlight">
+<p>🔒 <strong>Arsitektur Zero-Knowledge:</strong> Armor Pass beroperasi dengan prinsip zero-knowledge. Seluruh kata sandi, akun, dan data brankas Anda dienkripsi secara lokal di perangkat Anda. Kami tidak memiliki akses ke master password maupun data brankas Anda.</p>
+</div>
+
+<h2>Data yang Diproses</h2>
+
+<p>Armor Pass memproses jenis informasi berikut secara ketat hanya untuk menyediakan layanan brankas kata sandi offline dan pencadangan terenkripsi opsional:</p>
+
+<ul>
+<li><strong>Kredensial Brankas:</strong> Nama pengguna, kata sandi, catatan rahasia, PIN, dan bidang kustom yang Anda masukkan. Seluruh kredensial dienkripsi secara lokal menggunakan enkripsi terotentikasi AES-256-GCM dengan kunci yang diturunkan melalui fungsi Argon2id.</li>
+<li><strong>Informasi Akun Google:</strong> Jika Anda mengaktifkan Sinkronisasi Google Drive, aplikasi mengakses identitas akun Google dasar Anda (alamat email dan nama) semata-mata untuk mengautentikasi dan menyambungkan ke akun Google Drive Anda.</li>
+<li><strong>Data Biometrik:</strong> Jika Anda mengaktifkan autentikasi biometrik (sidik jari atau pemindaian wajah), verifikasi ditangani sepenuhnya oleh sistem operasi Android (Android BiometricPrompt & KeyStore). Armor Pass tidak pernah mengumpulkan, menyimpan, atau mengakses data biometrik Anda.</li>
+</ul>
+
+<h2>Penggunaan Data</h2>
+
+<ul>
+<li>Mengenkrpsi dan mendekripsi data brankas secara lokal di perangkat Anda.</li>
+<li>Mengisi kredensial secara aman ke dalam aplikasi dan web melalui layanan Android Autofill atas persetujuan Anda.</li>
+<li>Mencadangkan dan menyinkronkan file brankas terenkripsi ke penyimpanan Google Drive pribadi Anda (hanya jika diaktifkan).</li>
+</ul>
+
+<h2>Penyimpanan Data Lokal</h2>
+
+<p>Data brankas dan master password Anda tidak pernah disimpan dalam format teks biasa (plaintext) dan tidak pernah dikirimkan ke server kami. Seluruh data sensitif tetap tersimpan secara aman di perangkat lokal Anda.</p>
+
+<h2>Integrasi Google Drive & Kebijakan Data Pengguna Google API</h2>
+
+<p>Armor Pass menyediakan fitur opsional untuk mencadangkan dan menyinkronkan file brankas terenkripsi ke akun Google Drive pribadi Anda.</p>
+
+<ul>
+<li><strong>Cakupan Terbatas (Restricted Scope):</strong> Armor Pass hanya meminta akses ke folder data aplikasi Google Drive (<code>https://www.googleapis.com/auth/drive.appdata</code>) dan file yang dibuat oleh aplikasi (<code>https://www.googleapis.com/auth/drive.file</code>).</li>
+<li><strong>Tidak Mengakses File Pribadi Lain:</strong> Armor Pass tidak dapat membaca, melihat, mengedit, atau menghapus file, foto, atau dokumen lain di Google Drive Anda.</li>
+<li><strong>Komunikasi Langsung:</strong> Komunikasi berlangsung langsung antara perangkat Anda dan endpoint API resmi Google. Kami tidak mengoperasikan server perantara dan tidak pernah mengakses token atau data Google Anda.</li>
+<li><strong>Kepatuhan Penggunaan Terbatas (Limited Use):</strong> Penggunaan informasi yang diterima dari Google API oleh Armor Pass sepenuhnya mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, termasuk ketentuan Penggunaan Terbatas (Limited Use). Data pengguna Google Anda tidak pernah dialihkan ke pihak ketiga, tidak digunakan untuk periklanan, dan tidak digunakan untuk melatih model machine learning/AI.</li>
+</ul>
+
+<h2>Analitik</h2>
+
+<p>Armor Pass tidak menggunakan layanan analitik maupun pelacak.</p>
+
+<h2>Iklan</h2>
+
+<p>Armor Pass tidak menampilkan iklan.</p>
+
+<h2>Pembagian Data</h2>
+
+<p>Kami tidak menjual, menyewakan, memonetisasi, atau membagikan informasi pribadi atau data brankas Anda kepada pihak ketiga mana pun.</p>
+
+<h2>Keamanan</h2>
+
+<p>Kami menerapkan standar keamanan kriptografi tinggi untuk melindungi data Anda:</p>
+<ul>
+<li>Enkripsi sisi klien Zero-Knowledge (AES-256-GCM).</li>
+<li>Derivasi kunci dengan konsumsi memori tinggi (Argon2id KDF).</li>
+<li>Perlindungan layar Android (<code>FLAG_SECURE</code>) untuk mencegah tangkapan layar dan perekaman layar tanpa izin.</li>
+<li>Autentikasi biometrik yang didukung modul keamanan perangkat keras (hardware-backed).</li>
+</ul>
+
+<h2>Privasi Anak-Anak</h2>
+
+<p>Armor Pass tidak ditujukan untuk anak-anak di bawah usia 13 tahun. Kami tidak secara sengaja mengumpulkan informasi dari anak-anak.</p>
+
+<h2>Penghapusan Data</h2>
+
+<p>Anda memegang kendali penuh atas data Anda setiap saat:</p>
+<ul>
+<li><strong>Data Lokal:</strong> Anda dapat menghapus data brankas kapan saja dari dalam aplikasi atau melalui menu hapus data aplikasi di Pengaturan Android.</li>
+<li><strong>Cadangan Google Drive:</strong> Anda dapat menghapus berkas cadangan kapan saja melalui setelan web Google Drive (<em>Setelan &gt; Kelola Aplikasi &gt; Armor Pass &gt; Hapus data aplikasi tersembunyi</em>) atau dengan memutuskan tautan akun Google di menu Pengaturan Armor Pass.</li>
+</ul>
+
+<h2>Perubahan Kebijakan Privasi</h2>
+
+<p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Setiap pembaruan akan dicantumkan dengan tanggal berlaku yang baru di bagian atas halaman ini.</p>
+
+<h2>Kontak</h2>
+
+<p>Pengembang: <strong>Iwan Sumpena</strong><br>
+Aplikasi: <strong>Armor Pass</strong> (<code>com.sumpena.armorpass</code>)<br>
+Email: <strong><a href="mailto:iwansumpena@gmail.com">iwansumpena@gmail.com</a></strong></p>
+
+</body>
+</html>
